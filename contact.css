@@ -1,0 +1,148 @@
+/* Main content area */
+.centerContent {
+  width: 90%; /* keeps the section flexible across different browser widths */
+  max-width: 1320px; /* stops the content from stretching too wide on large screens */
+  margin: 0 auto; /* centers the whole content area */
+  padding: 36px 0 50px;
+  display: grid; /* grid layout is used to place the two boxes side by side */
+  /* the first column can shrink down if needed, but it should usually take more space*/
+  grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr); /* makes the form column wider and keeps the contact info column smaller but not too narrow */
+  column-gap: 40px;
+  align-items: start; /* keeps both boxes aligned from the top */
+  flex: 1; /* lets the content grow and helps push the footer down */
+}
+
+/* left box */
+.contact-form-box {
+  background-color: #193975;
+  padding: 42px 48px;
+  border: 1px solid #2b3d6b;
+  border-radius: 20px; 
+  margin-top: 24px;
+}
+
+/* heading */
+.contact-form-box h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* top text */
+.contact-top-text {
+  color: #00D1FF;
+  font-size: 21px;
+  margin-bottom: 14px;
+}
+
+/* sub text */
+.contact-subtext {
+  font-size: 20px;
+  color: #D1D5DB;
+  margin-bottom: 32px;
+  line-height: 1.5; 
+}
+
+/* form text */
+.contact-form-box form {
+  font-size: 18px;
+  font-weight: 700;
+  color: #D1D5DB;
+}
+
+/* label text */
+.contact-form-box label {
+  display: inline-block; /* keeps each label neatly above its field */
+  margin-bottom: 2px;
+}
+
+/* input fields and textarea */
+.contact-form-box input[type="text"],
+.contact-form-box input[type="email"],
+.contact-form-box textarea {
+  width: 100%; /* makes fields stretch across the full box width */
+  background-color: #11184E;
+  border: 1px solid #0b1038;
+  border-radius: 12px;
+  color: #FFFFFF;
+  padding: 16px 18px;
+  font-size: 16px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+/* message box */
+.contact-form-box textarea {
+  height: 140px;
+  resize: none; /* prevents the user from resizing the box and breaking the layout */
+}
+
+/* button */
+.contact-form-box input[type="button"] {
+  width: 100%;
+  background-color: #00D1FF;
+  color: #000000;
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer; /* changes the mouse cursor to show the button is clickable */
+  margin-top: 8px;
+  transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;  /* makes the text, movement, and shadow change smoothly on hover */
+}
+
+/* changes the text to white and lifts the button slightly on hover */
+.contact-form-box input[type="button"]:hover {
+  color: #FFFFFF; /* changes the button text to white on hover so the interaction is easier to see */
+  transform: translateY(-2px); /* lifts the button slightly upward so it feels more clickable */
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2); /* adds a soft shadow so the button stands out more on hover */
+}
+
+/* right box */
+.contact-info-box {
+  background-color: #193975;
+  min-height: 420px; /* keeps the box tall enough to balance with the form */
+  padding: 40px 38px;
+  border: 1px solid #2b3d6b;
+  border-radius: 20px;
+  margin-top: 120px; /* moves the box lower to align better beside the form */
+}
+
+/* right heading */
+.contact-info-box h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* each info block */
+.info-group {
+  margin-bottom: 22px;
+}
+
+/* small headings */
+.info-group h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+/* info text */
+.info-group p {
+  font-size: 16px;
+  color: #D1D5DB;
+  line-height: 1.4; /* makes the text easier to read */
+}
+
+/* email text */
+.info-group .email-text a {
+  color: #00D1FF;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease; /* makes the email text change smoothly on hover */
+}
+
+.email-text a:hover {
+  text-decoration: underline;
+  color: #FFFFFF; 
+}

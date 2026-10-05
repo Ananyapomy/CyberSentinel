@@ -1,0 +1,160 @@
+/* reset basic browser spacing and use easier box sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* keeps width and height easier to control */
+}
+
+body {
+  font-family: Arial, sans-serif; 
+  background-color: #11184E; 
+  color: #FFFFFF; 
+  min-height: 100vh; /* helps the page fill at least the full screen height */
+  display: flex; /* allows the page sections to be arranged more easily */
+  flex-direction: column; /* keeps header, content, and footer stacked from top to bottom */
+}
+
+.header {
+  background-color: #000000; 
+  display: flex; /* keeps logo, menu, and button in one row */
+  justify-content: space-between; /* spreads the main header parts across the row */
+  align-items: center; /* keeps header items lined up neatly */
+  padding: 20px 28px;
+  gap: 18px; 
+}
+
+.logo a {
+  text-decoration: none; /* removes underline from the logo link */
+  font-size: 42px; 
+  font-weight: 700; /* makes the logo look stronger */
+  color: #FFFFFF; 
+  transition: color 0.3s ease; /* makes the hover colour change smoother */
+  white-space: nowrap; /* stops the logo from breaking into two lines */
+}
+
+.logo a:hover {
+  color: #00D1FF; /* changes the logo colour on hover to show interaction */
+}
+
+.top-menu {
+  display: flex; /* keeps the menu area flexible */
+  justify-content: center; /* keeps the menu links centered */
+}
+
+.top-menu ul {
+  list-style: none; /* removes default bullet points */
+  display: flex; /* keeps the menu links in one row */
+  align-items: center; /* lines up the menu items neatly */
+  gap: 16px; 
+  margin: 0; /* removes default list margin */
+  padding: 0; /* removes default list padding */
+}
+
+.top-menu ul li a {
+  text-decoration: none; /* removes underline from menu links */
+  color: #FFFFFF; 
+  font-size: 21px;
+  font-weight: 700; 
+  white-space: nowrap; /* stops link text from breaking into two lines */
+  display: inline-block; /* lets the link stay inline like normal text, but also allows padding, border-radius, and transform effects to work properly */
+  padding: 10px 12px; 
+  border-radius: 6px; 
+  transition: color 0.3s ease, transform 0.3s ease; /* makes the hover effect smoother */
+}
+
+.top-menu ul li a:hover {
+  color: #00D1FF; 
+  transform: scale(1.05); /* slightly enlarges the link on hover */
+}
+
+.top-menu ul li a.active {
+  color: #00D1FF; /* highlights the current page link */
+}
+
+.header-button a {
+  text-decoration: none; 
+  background-color: #276AFF; 
+  color: #FFFFFF; 
+  min-width: 138px; /* keeps the button size more balanced */
+  padding: 12px 14px; 
+  border-radius: 10px; 
+  font-size: 17px; 
+  font-weight: 700; 
+  display: inline-flex; /* helps center the text inside the button */
+  align-items: center; /* centers the button text vertically */
+  justify-content: center; /* centers the button text horizontally */
+  text-align: center; 
+  line-height: 1; /* removes extra vertical space around the button text */
+  white-space: nowrap; /* stops the button text from breaking into two lines */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* makes hover changes smoother */
+}
+
+.header-button a:hover {
+  background-color: #00D1FF; 
+  color: #000000; 
+  transform: scale(1.03); /* slightly enlarges the button on hover */
+}
+
+/* footer section */
+.footer {
+  margin-top: auto; /* pushes the footer to the bottom when content is short */
+  background-color: #000000; 
+  color: #FFFFFF;
+  display: flex; /* keeps footer text and social area in one row */
+  justify-content: space-between; /* spreads the footer sections apart */
+  align-items: flex-end; /* keeps footer items aligned at the bottom */
+  padding: 20px 20px 40px 40px; 
+}
+
+/* privacy text */
+.footer p {
+  font-size: 22px; 
+  font-weight: 600; /* makes the footer text a bit stronger */
+  margin: 0; /* removes extra default paragraph space */
+}
+
+/* social section */
+.footer-social {
+  display: flex; /* makes the social area easier to arrange */
+  flex-direction: column; /* puts Follow Us above the icons */
+  align-items: flex-start; /* keeps the social content aligned from the left */
+  gap: 6px; 
+}
+
+/* Follow Us text */
+.footer-social h3 {
+  font-size: 22px; /* keeps the heading clear but not too large */
+  font-weight: 700; /* makes the heading stronger */
+  margin: 0; /* removes default heading space */
+}
+
+/* icon row */
+.icon-row {
+  display: flex; /* keeps the icons in one row */
+  gap: 8px; 
+}
+
+/* icon box */
+.icon-row a {
+  width: 70px; /* keeps all icon areas the same width */
+  height: 70px; /* keeps all icon areas the same height */
+  display: flex; /* helps place each icon neatly */
+  justify-content: center; /* centers each icon horizontally */
+  align-items: center; /* centers each icon vertically */
+}
+
+/* icon image */
+.icon-row a img {
+  max-width: 48px; /* keeps the icon from becoming too large inside the footer box */
+  max-height: 48px; /* keeps the icon height balanced with the other footer icons */
+  width: auto; /* keeps the original icon proportions */
+  height: auto; /* prevents the icon from stretching */
+  object-fit: contain; /* keeps the full icon visible without stretching */
+  display: block; /* removes extra space under the image */
+  transition: transform 0.3s ease; /* makes the hover movement smoother */
+}
+
+/* hover effect */
+.icon-row a img:hover {
+  transform: scale(1.1); /* slightly enlarges the icon on hover */
+}

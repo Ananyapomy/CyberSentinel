@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- Sets the character encoding so text displays correctly -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Helps the page scale properly on different screen sizes -->
+  <title>Cybersentinel | AI Defensive Solutions</title> <!-- Gives the page a clear browser tab title -->
+  <link rel="icon" type="image/png" href="../Images/logo.png"> <!-- shows the website logo in the browser tab -->
+  <link rel="stylesheet" href="../Styles/global.css"> <!-- Global styles for consistent design across all pages -->
+  <link rel="stylesheet" href="../Styles/aiSolution.css">
+
+  <script>
+    function analyseMessage(form)
+    {
+      let message = form.txtMessage.value.toLowerCase();
+      
+      if(message == "")
+      {
+        alert("Please enter a message!");
+      }
+      else if(
+        message.indexOf("urgent") != -1 ||
+        message.indexOf("password") != -1 ||
+        message.indexOf("click here") != -1 ||
+        message.indexOf("verify") != -1 
+      )
+      {
+        alert("Trust Score: 3/10 \nRisk Level: High\nAI Detection Score: Suspicious Message \nRecommended Defence Action: Do not click links or share personal information \nHow this helps: The system warns the user about possible phishing clues so they can avoid unsafe actions.");
+      }
+      else if(
+        message.indexOf("login") != -1 ||
+        message.indexOf("confirm") != -1 ||
+        message.indexOf("update") != -1 
+      )
+      {
+        alert("Trust Score: 6/10 \nRisk Level: Medium\nAI Detection Score: Some suspicious clues found \nRecommended Defence Action: Check carefully before responding \nHow this helps: The system encourages the user to review the message more carefully before taking action.");
+      }
+      else 
+      {
+        alert("Trust Score: 9/10 \nRisk Level: Low\nAI Detection Score: No major suspicious clues found \nRecommended Defence Action: Message appears safer \nHow this helps: The system shows that the message has fewer warning signs, so the user can feel more confident.");
+      }
+    }
+  </script>
+
+</head>
+<body>
+  <!--  Header is used to keep the logo, navigation links, and simulator button in one consistent top section -->
+  <header class="header">
+    
+    <!-- Logo area is used for website identity and also links back to the homepage -->
+    <div class="logo">  
+      <a href="index.html">Cybersentinel</a>
+    </div>
+
+    <!-- Navigation menu helps users move easily between all the main pages of the website -->
+    <nav class="top-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="threats.html">Emerging Threats</a></li>
+        <li><a href="caseStudy.html">Case Studies</a></li>
+        <li><a href="aiSolution.html" class="active">AI Defensive Solutions</a></li>
+        <li><a href="aboutUs.html">About Us</a></li>
+        <li><a href="login.html">Log In</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- This call-to-action button is used to quickly direct users to the simulator page -->
+    <div class="header-button">
+      <a href="aiSolution.html">Try Simulator</a>
+    </div>
+  </header>
+
+  <main class="ai-solution-page">
+
+    <!-- Page heading introduces the purpose of this section and tells users that AI can be used for cyber defence -->
+    <section class="page-heading">
+      <h1>AI Defensive Solutions</h1>
+      <p>Explore how modern Artificial Intelligence detects and neutralizes cyber threats</p>
+    </section>
+
+    <!-- Simulator card is used to give users an interactive example of how AI can analyse suspicious messages -->
+    <div class="simulator-card">
+      <p class="intro">
+        This prototype shows how AI can detect phishing clues, assess risk, and recommend safer user action.
+      </p>
+
+      <!-- Form is used so users can paste a suspicious message and test how the AI prototype responds -->
+      <form>
+        <textarea id="txtMessage" name="txtMessage" class="simulator-input" placeholder="Paste a suspicious email or message here..."></textarea>
+        <button type="button" class="run-btn" onclick="analyseMessage(this.form)">RUN ANALYSIS</button>
+      </form>
+      
+    </div>
+
+    <!-- This section introduces extra AI defence methods to show that protection is not limited to one tool -->
+    <section class="support-section">
+      <h2>Supporting AI Defence Methods</h2>
+
+      <!-- Card container is used to group the three AI defence ideas in one clear row -->
+      <div class="cards">
+        <div class="card">
+          <h3>Deepfake Detection</h3>
+          <p>Advanced algorithms analyze pixel generation and voice frequency to identify synthetic media.</p>
+        </div>
+
+        <!-- This card explains how AI can monitor unusual behaviour and detect suspicious activity -->
+        <div class="card">
+          <h3>Behavior Monitoring</h3>
+          <p>Systems learn normal user patterns to flag anomalies like unusual logins instantly.</p>
+        </div>
+
+        <!-- This card explains how AI can isolate infected devices to reduce the spread of attacks -->
+        <div class="card">
+          <h3>Device Protection</h3>
+          <p>AI isolates infected devices in milliseconds to prevent malware from spreading.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- This heading separates the practical user strategies from the earlier AI defence overview -->
+    <section class="strategy-heading">
+      <h2>DEFENCE STRATEGIES YOU CAN USE</h2>
+    </section>
+
+    <!-- This strategy card teaches users how to protect themselves against deepfake-based attacks -->
+    <section class="strategy-card">
+      <h3>Defending Against Deepfakes</h3>
+      <p class="strategy-intro">Video calls are no longer proof of identity. If you are asked to transfer money or share sensitive info on a video call, follow these steps:</p>
+
+      <!-- Tip card gives one practical action users can take to verify identity -->
+      <div class="tip-card">
+        <h4>✔ Establish a “Safe Word” or Question</h4>
+        <p>Agree on a secret word or question (e.g., “What was the name of your first pet?”) with your family or finance team. Ask this if the request feels sudden.</p>
+      </div>
+
+      <!-- Tip card helps users identify small warning signs in fake video content -->
+      <div class="tip-card">
+        <h4>✔ Look for Visual Glitches</h4>
+        <p>AI video can look real, but often has small errors in blinking, lip movement, or skin texture around the mouth and eyes.</p>
+      </div>
+
+      <!-- Tip card encourages users to confirm identity through a safer second method -->
+      <div class="tip-card">
+        <h4>✔ Verify via a second channel</h4>
+        <p>If a “CEO” calls you on Zoom/Teams, pause the video and call them on their known mobile number to confirm.</p>
+      </div>
+
+      <!-- This short section explains why the advice above is important in real situations -->
+      <h5>WHY THIS MATTERS?</h5>
+      <p class="why-text">Deepfake technology can appear realistic, so checking identity in another way helps prevent fraud.</p>
+    </section>
+
+    <!-- This strategy card teaches users how to recognise AI-generated phishing emails -->
+    <section class="strategy-card">
+      <h3>Spotting AI Phishing</h3>
+      <p class="strategy-intro">AI writes perfect emails without spelling mistakes. Do not rely on grammar to spot scams. Focus on the context and the links.</p>
+
+      <!-- Tip card reminds users to check the real sender address instead of trusting the display name -->
+      <div class="tip-card">
+        <h4>✔ Check the Actual Email Address</h4>
+        <p>Ignore the “Display Name” (e.g., “Michael Ross”). Click or hover on the sender’s name to see the real address (e.g., m.ross@fake-company.com).</p>
+      </div>
+
+      <!-- Tip card encourages users to inspect links before clicking on them -->
+      <div class="tip-card">
+        <h4>✔ Hover Before Clicking</h4>
+        <p>Hover your mouse over any button or link without clicking. A small box will appear at the bottom left showing the real website URL.</p>
+      </div>
+
+      <!-- Tip card explains that urgency is often used to pressure victims into rushing -->
+      <div class="tip-card">
+        <h4>✔ Distrust "Urgency"</h4>
+        <p>Phrases like “Immediate Action Required” or “Within the hour” are psychological pressure tactics. Real business is rarely that sudden.</p>
+      </div>
+
+      <!-- This short section explains why these phishing checks matter even when messages look professional -->
+      <h5>WHY THIS MATTERS?</h5>
+      <p class="why-text">AI can copy your boss's writing style perfectly. Even if the tone sounds right, if the request is unusual or urgent, you must verify the source.</p>
+    </section>
+
+    <!-- This strategy card teaches users how to respond safely to AI voice-cloning scams -->
+    <section class="strategy-card">
+      <h3>Stopping Voice Scams</h3>
+      <p class="strategy-intro">Voice cloning only needs 3 seconds of audio. Never trust a caller ID, as it can be easily faked (“Spoofed”).</p>
+
+      <!-- Tip card tells users to end the suspicious call and contact the real person directly -->
+      <div class="tip-card">
+        <h4>✔ Hang Up and Call Back</h4>
+        <p>If someone calls claiming to be from your bank or a family member in trouble, hang up. Call them back on a number you know is real.</p>
+      </div>
+
+      <!-- Tip card shows how a personal question can help test whether the caller is genuine -->
+      <div class="tip-card">
+        <h4>✔ Ask a "Memory Question."</h4>
+        <p>Ask the caller something only the real person would know (e.g., “Where did we go for dinner last year?”). AI cannot easily access personal shared memories.</p>
+      </div>
+
+      <!-- Tip card reminds users not to reveal private information during incoming calls -->
+      <div class="tip-card">
+        <h4>✔ Never Share Personal Info Via Phone</h4>
+        <p>Legitimate organizations will never ask for passwords, PINs, or full credit card numbers over an incoming phone call.</p>
+      </div>
+
+      <!-- This short section explains why independent verification is important against voice fraud -->
+      <h5>WHY THIS MATTERS?</h5>
+      <p class="why-text">Voice biometrics used by banks are being tricked. Taking control of the conversation and verifying facts yourself is the safest way to stop voice fraud.</p>
+    </section>
+
+    <!-- Final card is used to summarise the overall importance of awareness, verification, and safe online behaviour -->
+    <section class="final-card">
+      <h3>Why These Strategies Matter?</h3>
+      <p>
+        Tools like our simulator help users practise, but in the real world, the strongest defence is awareness, critical thinking, and responsible online behaviour. By following these specific steps for Video, Email, and Voice, users can identify suspicious warning signs, reduce the risk of manipulation, and make safer decisions before responding to unexpected requests. These strategies matter because AI-powered cyber threats can appear highly realistic and professional, so verifying information carefully and using trusted communication methods can help protect both personal and organisational security.
+      </p>
+    </section>
+  </main>
+
+
+   <!--Footer section: contains privacy text and social media links -->
+  <footer class="footer">
+    <p>Privacy Policy | &copy; 2026 Cybersentinel</p>
+
+    <!-- Social media section is used to improve visibility and connect users with external platforms -->
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="icon-row">
+        <!-- Width and height are added so the browser reserves space for each icon before it loads, keeping all footer icons the same size and reducing layout shifting -->
+        <!-- rel="noopener noreferrer"  makes links that open in a new tab safer and more secure -->
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img src="../Images/facebook.webp" alt="Facebook" height="70" width="70"></a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img src="../Images/instagram.webp" alt="Instagram" height="70" width="70"></a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><img src="../Images/linkedIn.webp" alt="LinkedIn" height="70" width="70"></a>
+        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><img src="../Images/X.webp" alt="Twitter" height="70" width="70"></a>
+      </div>
+    </div>
+
+  </footer>
+</body>
+</html>

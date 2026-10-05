@@ -1,0 +1,245 @@
+/* about us main area */
+.about-us {
+  width: 100%; /* makes the main section fill the page width */
+  padding: 40px 0 60px; /* adds space above and below the page content */
+}
+
+/* intro section */
+.about-intro-section {
+  width: 100%;
+  margin-bottom: 35px; /* adds space below the intro section */
+}
+
+/* intro box */
+.about-intro-box {
+  width: 90%; /* keeps the box flexible on different screen sizes */
+  max-width: 980px; /* stops the intro box from becoming too wide */
+  margin: 0 auto; /* centers the intro box */
+  background-color: #193975;
+  border: 1px solid #2b3d6b; /* adds a soft border around the box */
+  border-radius: 25px;
+  padding: 45px 55px; 
+  text-align: center; /* keeps the intro text in the middle */
+}
+
+.about-intro-box h2 {
+  font-size: 28px; /* makes the intro heading clear */
+  font-weight: 700;
+  margin-bottom: 20px; /* adds space below the heading */
+}
+
+.about-intro-box p {
+  font-size: 22px; 
+  line-height: 1.7; /* makes long text easier to read */
+  color: #D1D5DB;
+}
+
+/* mission and vision section */
+.mission-vision-section {
+  width: 100%;
+  margin-bottom: 35px; 
+}
+
+.mission-vision-row {
+  width: 90%;
+  max-width: 1200px; /* stops the row from becoming too wide */
+  margin: 0 auto; /* centers the row */
+  display: flex; /* places the two boxes in one row */
+  justify-content: center;
+  gap: 25px; /* adds space between the boxes */
+  flex-wrap: wrap; /* lets boxes move down if needed */
+}
+
+.info-card {
+  flex: 1 1 480px; /* keeps the cards flexible while holding a good size */
+  max-width: 580px; /* stops each card from becoming too wide */
+  background-color: #193975;
+  border: 1px solid #2b3d6b; /* adds a border around each card */
+  border-radius: 25px;
+  padding: 38px 40px; 
+}
+
+.info-card h3 {
+  font-size: 28px; 
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.info-card p {
+  font-size: 22px; 
+  line-height: 1.7; /* makes the paragraph easier to read */
+  color: #D1D5DB;
+}
+
+/* feature section */
+.feature-section {
+  width: 100%;
+  margin-bottom: 30px; 
+}
+
+.feature-row {
+  width: 90%;
+  max-width: 1200px; /* stops the row from becoming too wide */
+  margin: 0 auto; /* centers the row */
+  display: flex; /* places the cards in one row */
+  justify-content: center;
+  gap: 30px; 
+  flex-wrap: wrap; /* lets cards move down if needed */
+}
+
+.small-card {
+  flex: 1 1 280px; /* keeps each card flexible but balanced */
+  max-width: 360px;
+  min-height: 250px; /* keeps the cards a similar height */
+  background-color: #193975;
+  border: 1px solid #2b3d6b; /* adds a border around each card */
+  border-radius: 28px;
+  padding: 26px 20px;
+  text-align: center; /* keeps the card content centered */
+}
+
+.small-card h3 {
+  font-size: 26px; /* makes the card heading clear */
+  font-weight: 700;
+  margin-bottom: 18px; /* adds space below the heading */
+}
+
+.small-card p {
+  font-size: 20px;
+  line-height: 1.6; /* makes the text easier to read */
+  color: #D1D5DB;
+}
+
+/* why section */
+.why-section {
+  width: 100%;
+  margin-bottom: 18px; 
+}
+
+.why-box {
+  width: 90%; /* keeps the box flexible */
+  max-width: 1200px; /* stops the box from becoming too wide */
+  margin: 0 auto; /* centers the box */
+  background-color: #193975;
+  border: 1px solid #2b3d6b; /* adds a border around the box */
+  padding: 28px 50px;
+  text-align: center; /* keeps the content centered */
+  border-radius: 20px;
+}
+
+.why-box h2 {
+  font-size: 28px; 
+  font-weight: 700;
+  margin-bottom: 14px; 
+}
+
+.why-box p {
+  font-size: 22px; 
+  line-height: 1.7; /* makes the text easier to read */
+  color: #D1D5DB;
+  max-width: 980px; /* stops the text from becoming too wide */
+  margin: 0 auto; /* centers the paragraph */
+}
+
+/* stats section */
+.stats-section {
+  width: 100%;
+  padding: 40px 0; /* adds space above and below the stats */
+  margin-bottom: 16px; 
+}
+
+.stats-row {
+  width: 90%;
+  max-width: 1000px; /* stops the row from becoming too wide */
+  margin: 0 auto; /* centers the row */
+  display: flex; /* places the stat cards in one row */
+  justify-content: center;
+  gap: 35px; /* adds space between the stat cards */
+  flex-wrap: wrap; /* lets cards move down if needed */
+}
+
+.stat-card {
+  width: 250px; /* keeps all stat cards the same width */
+  min-height: 190px; /* keeps all stat cards a similar height */
+  background-color: #193975;
+  border-radius: 22px;
+  padding: 22px 16px; 
+  text-align: center; /* keeps the stat content centered */
+}
+
+.stat-card h3 {
+  font-size: 34px; /* makes the number stand out */
+  font-weight: 700;
+  color: #00D1FF; 
+  margin-bottom: 10px; 
+}
+
+.stat-card p {
+  font-size: 20px;
+  line-height: 1.5; /* makes the text easier to read */
+  margin-bottom: 8px; /* adds space below the paragraph */
+  color: #D1D5DB;
+}
+
+.stat-card span {
+  display: block; /* puts the extra text on its own line */
+  font-size: 20px;
+  line-height: 1.4; /* keeps the extra text readable */
+  color: #D1D5DB;
+}
+
+/* closing section */
+.closing-section {
+  width: 100%;
+}
+
+.closing-box {
+  width: 90%; /* keeps the closing box flexible */
+  max-width: 1200px; /* stops the box from becoming too wide */
+  margin: 0 auto; /* centers the box */
+  background-color: #193975;
+  border: 1px solid #2b3d6b; 
+  padding: 50px 35px; 
+  text-align: center; /* keeps the content centered */
+  border-radius: 20px;
+}
+
+.closing-box p {
+  font-size: 24px;
+  line-height: 1.7; /* makes the text easier to read */
+  color: #D1D5DB;
+}
+
+/* hover transition for boxes */
+.info-card,
+.small-card,
+.about-intro-box,
+.why-box,
+.stat-card,
+.closing-box {
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out, border-color 0.4s ease-in-out; /* makes the hover effect smoother */
+}
+
+/* hover movement and shadow */
+.info-card:hover,
+.small-card:hover,
+.about-intro-box:hover,
+.why-box:hover,
+.stat-card:hover,
+.closing-box:hover {
+  transform: translateY(-4px); /* moves the box slightly upward on hover */
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22); /* adds shadow so the box stands out more */
+}
+
+/* brighter border on hover */
+.info-card:hover,
+.small-card:hover,
+.about-intro-box:hover,
+.why-box:hover,
+.closing-box:hover {
+  border-color: #00D1FF; /* changes the border colour on hover */
+}
+
+.stat-card:hover h3 {
+  color: #FFFFFF; /* changes the stat number to white on hover */
+}

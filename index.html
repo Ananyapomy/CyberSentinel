@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">  <!-- Sets the character encoding so text displays correctly -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Helps the page scale properly on different screen sizes -->
+  <title>Cybersentinel | Home</title> <!-- Gives the page a clear browser tab title -->
+  <link rel="icon" type="image/png" href="../Images/logo.png"> <!-- shows the website logo in the browser tab -->
+  <link rel="stylesheet" href="../Styles/global.css"> <!-- Global styles for consistent design across all pages -->
+  <link rel="stylesheet" href="../Styles/index.css">
+</head>
+<body>
+  <!--  Header is used to keep the logo, navigation links, and simulator button in one consistent top section -->
+  <header class="header">
+    <div class="logo">  <!--logo-->
+      <a href="index.html">Cybersentinel</a>
+    </div>
+
+    <!-- Navigation menu helps users move easily between all the main pages of the website -->
+    <nav class="top-menu">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="threats.html">Emerging Threats</a></li>
+        <li><a href="caseStudy.html">Case Studies</a></li>
+        <li><a href="aiSolution.html">AI Defensive Solutions</a></li>
+        <li><a href="aboutUs.html">About Us</a></li>
+        <li><a href="login.html">Log In</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- This call-to-action button is used to quickly direct users to the simulator page -->
+    <div class="header-button">
+      <a href="aiSolution.html">Try Simulator</a>
+    </div>
+  </header>
+
+  <main class="homepage"> 
+
+    <!-- Banner section is used to introduce the website clearly and show its main purpose at the top of the homepage -->
+    <section class="banner">
+      <div class="banner-text">
+        <p class="small-title">AI in Cybersecurity</p>
+        <h2>Securing AI<br>starts<br>with<br>Cybersentinel</h2>
+        <p class="banner-para">
+          Experience the next generation of cybersecurity where 
+          artificial intelligence battles AI-powered threats. 
+          Learn practical defenses against deepfakes and phishing
+        </p>
+
+        <!-- Banner buttons are used to guide users quickly to the key sections of the website -->
+        <div class="banner-buttons">
+          <a href="threats.html" class="btn1">Explore Threats</a>
+          <a href="aiSolution.html" class="btn2">AI Defensive Solutions</a>
+        </div>
+      </div>
+
+      <!-- Banner image is used to make the homepage more visual and support the cybersecurity theme -->
+      <div class="banner-image">
+        <!-- width and height are used to define the image size in advance so the browser can reserve the correct space and keep the layout more stable while loading -->
+        <!-- decoding="async" is used so the browser can process the image more efficiently without slowing down the initial page rendering -->
+        <img src="../Images/banner-image.webp" alt="Cybersecurity Visual" width="650" height="380"  loading= "lazy" decoding="async"> 
+      </div>
+    </section>
+
+    <!-- Threat section is used to introduce the main AI-powered threats in a simple and easy-to-scan layout -->
+    <section class="threat-section">
+      <h2><b>AI Powered Cyber Threats</b></h2>
+      <p class="threat-intro">
+        Artificial Intelligence has created powerful tools for innovation, 
+        but it has also introduced new cyber threats that are harder to detect
+      </p>
+
+      <!-- Threat row is used to organise the three main threats side by side -->
+      <div class="threat-row">
+
+        <!-- This card introduces deepfake attacks as one of the major AI-powered threats -->
+        <a href="threats.html#deepfake-case" class="threat-link">
+          <div class="threat-card">
+            <div class="threat-content">
+              <p class="card-label">Threat</p>
+              <h3>Deepfake Attacks</h3>
+              <p class="card-text">
+                AI-generated video and audio can impersonate executives 
+                and manipulate employees during meetings and financial requests
+              </p>
+
+              <!-- This image helps users quickly connect the card with the deepfake topic -->
+              <div class="threat-image">
+                <img src="../Images/deepfake.webp" alt="Deepfake Attacks" width="360" height="260" loading="lazy" decoding="async">
+              </div>
+
+            </div>
+          </div>
+        </a>
+
+        <!-- This card introduces phishing as an AI-driven threat that can target users through emails and links -->
+        <a href="threats.html#email-example" class="threat-link">
+          <div class="threat-card">
+            <div class="threat-content">
+              <p class="card-label">Threat</p>
+              <h3>Phishing</h3>
+              <p class="card-text">
+                AI can generate convincing phishing emails and fake messages
+                that trick users into clicking links or sharing sensitive data 
+              </p>
+
+              <!-- This image supports the phishing topic visually -->
+              <div class="threat-image">
+                <img src="../Images/phishing.webp" alt="AI Phishing" width="360" height="260" loading="lazy" decoding="async">
+              </div>
+
+            </div>
+          </div>
+        </a>
+
+
+        <!-- This card introduces voice cloning as an AI threat that can be used in fraud and impersonation -->
+        <a href="threats.html#voice-case" class="threat-link">
+          <div class="threat-card">
+            <div class="threat-content">
+              <p class="card-label">Threat</p>
+              <h3>Voice Cloning</h3>
+              <p class="card-text">
+                Attackers can replicate someone's voice using AI and perform 
+                fraudulent phone calls to request sensitive information  
+              </p>
+
+              <!-- This image helps represent the voice cloning threat visually -->
+              <div class="threat-image">
+                <img src="../Images/voice-cloning.webp" alt="Voice Cloning" width="360" height="260" loading="lazy" decoding="async">
+              </div>
+
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Solution section is used to show how AI can also be used as a defence against cyber threats -->
+    <section class="solution-section">
+      <h2>AI Defensive Solutions</h2>
+      <p class="solution-intro">
+        Artificial Intelligence can defend against cyber attacks by analysing 
+        large amounts of data and detecting threats in real time
+      </p>
+
+      <!-- Solution container is used to stack the defensive solution cards in a clear vertical layout -->
+      <div class="solution-container">
+       
+        <!-- This card explains how AI can be used to detect deepfake media -->
+        <a href="aiSolution.html" class="solution-link">
+          <div class="solution-card">
+
+            <!-- Solution image gives a visual representation of deepfake detection -->
+            <div class="solution-image">
+              <img src="../Images/deepfake-detection.webp" alt="Deepfake Detection" width="360" height="260" loading="lazy" decoding="async">
+            </div>
+
+            <div class="solution-content">
+              <p class="solution-label">Solution</p>
+              <h3>Deepfake Detection</h3>
+              <p class="solution-text">
+                AI analyzes facial expressions, voice patterns, and 
+                video inconsistencies to detect manipulated media 
+              </p>
+            </div>
+          </div>
+        </a>
+
+       <!-- This card explains how AI can help detect phishing attempts before users interact with them -->
+        <a href="aiSolution.html" class="solution-link">
+          <div class="solution-card">
+
+            <!-- Solution image supports the phishing detection topic visually -->
+            <div class="solution-image">
+              <img src="../Images/phishing-detection.webp" alt="AI Phishing Detection" width="360" height="260" loading="lazy" decoding="async">
+            </div>
+
+            <div class="solution-content">
+              <p class="solution-label">Solution</p>
+              <h3>AI Phishing Detection</h3>
+              <p class="solution-text">
+                Machine Learning analyzes email content and links to 
+                identify phishing attempts before users click them 
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <!-- This card explains how AI voice recognition can be used for safer authentication -->
+        <a href="aiSolution.html" class="solution-link">
+          <div class="solution-card">
+
+            <!-- Solution image helps represent the voice authentication topic visually -->
+            <div class="solution-image">
+              <img src="../Images/voice-authentication.webp" alt="Voice Authentication" width="360" height="260" loading="lazy" decoding="async">
+            </div>
+
+            <div class="solution-content">
+              <p class="solution-label">Solution</p>
+              <h3>Voice Authentication</h3>
+              <p class="solution-text">
+                Voice biometrics helps verify speakers and prevent 
+                fraud using AI voice recognition
+              </p>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+  </main>
+
+
+ <!--Footer section: contains privacy text and social media links -->
+  <footer class="footer">
+    <p>Privacy Policy | &copy; 2026 Cybersentinel</p>
+
+    <!-- Social media section is used to improve visibility and connect users with external platforms -->
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="icon-row">
+        <!-- Width and height are added so the browser reserves space for each icon before it loads, keeping all footer icons the same size and reducing layout shifting -->
+        <!-- rel="noopener noreferrer"  makes links that open in a new tab safer and more secure -->
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img src="../Images/facebook.webp" alt="Facebook" width="70" height="70"></a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img src="../Images/instagram.webp" alt="Instagram" width="70" height="70"></a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><img src="../Images/linkedIn.webp" alt="LinkedIn" width="70" height="70"></a>
+        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><img src="../Images/X.webp" alt="Twitter" width="70" height="70"></a>
+      </div>
+    </div>
+
+  </footer>
+</body>
+</html>

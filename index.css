@@ -1,0 +1,287 @@
+/* main page*/
+/* banner */
+.banner {
+  width: 100%; /* makes the banner fill the page width */
+  background-color: #193975;
+  padding: 72px 110px 88px 115px;  
+  display: flex;  /* puts text and image side by side */
+  justify-content: space-between;
+  align-items: center; /* keeps both sides lined up in the middle */
+  gap: 80px; /* adds space between text and image */
+}
+
+/* banner text area */
+.banner-text {
+  width: 48%; /* gives the text section enough space */
+}
+
+/* small title */
+.small-title {
+  font-size: 18px; 
+  font-weight: 700;
+  color: #00D1FF;  
+  margin-bottom: 12px; 
+}
+
+/* banner main heading */
+.banner-text h2 {
+  font-size: 60px; 
+  font-weight: 700;
+  line-height: 1.18; /* keeps the heading lines neat so that it is easier to read */
+  margin-bottom: 20px; /* adds space below the heading before the paragraph starts */
+  color: #FFFFFF;
+}
+
+/* banner paragraph */
+.banner-para {
+  font-size: 22px; 
+  line-height: 1.55; /* makes the paragraph easier to read */
+  margin-bottom: 26px;  /* adds space below the paragraph before the buttons */
+  max-width: 680px; /* stops the text from becoming too wide */
+  color: #FFFFFF;
+}
+
+/* banner buttons area */
+.banner-buttons {
+  margin-top: 6px; /* adds a little space above the button row */
+}
+
+/* banner buttons */
+.banner-buttons a {
+  display: inline-block; /* makes the links behave like buttons */
+  text-decoration: none; /* removes the default underline from links */
+  padding: 14px 24px; 
+  border-radius: 6px;
+  margin-right: 12px; /* adds space between the two buttons */
+  font-size: 18px;
+  font-weight: 700;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* makes hover smoother */
+}
+
+/* first button */
+.btn1 {
+  background-color: #007FA3;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+/* first button hover */
+.btn1:hover {
+  background-color: #00D1FF;
+  color: #000000;
+}
+
+/* second button */
+.btn2 {
+  background-color: transparent;  /* keeps the button background clear */
+  color: #00D1FF;
+  border: 2px solid #17A7CF; /* adds border around the button */
+}
+
+/* second button hover */
+.btn2:hover {
+  background-color: #00D1FF;
+  color: #000000;
+}
+
+/* banner image area */
+.banner-image {
+  width: 40%;  /* gives space to the image side */
+  display: flex; /* helps place the image neatly and makes alignment easier */
+  justify-content: flex-start; /* keeps the image aligned from the left */
+}
+
+/* banner image */
+.banner-image img {
+  width: 100%;  /* makes the image fill its box */
+  max-width: 540px; /* stops the image from becoming too wide */
+  height: 310px; /* keeps the image height the same so the banner looks balanced */
+  object-fit: cover; /* keeps the image looking neat inside the box */
+  display: block; /* removes extra gap under the image */
+}
+
+/* threat section and solution section */
+.threat-section,
+.solution-section {
+  width: 100%; /* makes both sections stretch fully across the page */
+  background-color: #11184E;
+  text-align: center; /* keeps headings and intro text in the center */
+  padding: 60px 0 80px 0; /* adds space above and below the section content */
+}
+
+/* section headings */
+.threat-section h2,
+.solution-section h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+/* section intro text */
+.threat-intro,
+.solution-intro {
+  font-size: 25px;
+  line-height: 1.6;  /* makes the intro text easier to read */
+  color: #D1D5DB;
+  max-width: 1150px; /* keeps the text from becoming too wide */
+  margin: 0 auto 65px auto; /* centers the text and adds space below */
+}
+
+/* threat cards row */
+.threat-row {
+  display: flex; /* puts the threat cards in one row */
+  justify-content: center; /* keeps the cards centered on the page */
+  gap: 40px; /* adds equal space between the cards */
+}
+
+/* threat link */
+.threat-link {
+  text-decoration: none; /* removes the default underline from the linked card */
+  display: block; /* makes the whole card clickable */
+}
+
+/* threat card */
+.threat-card {
+  width: 310px;  /* keeps all cards the same width */
+  height: 435px; /* keeps all cards the same height */
+  background-color: #193975;
+  border: 2px solid #276AFF;
+  border-radius: 26px;
+  text-align: left;  /* keeps the card text aligned neatly inside */
+  padding: 26px 20px 22px 20px;  /* adds inner space so content does not touch the edges */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* makes hover smooth */
+}
+
+/* threat card hover */
+.threat-card:hover {
+  transform: translateY(-6px);/* move the card slightly up on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);  /* adds shadow on hover */
+  border-color: #00D1FF;
+}
+
+/* threat card content */
+.threat-content {
+  height: 100%; /* makes the content fill the full card height */
+  display: flex; /* keeps the card content arranged in one flexible layout */
+  flex-direction: column; /* stacks card content from top to bottom */
+}
+
+/* card label */
+.card-label {
+  font-size: 18px;
+  font-weight: 700;
+  color:#00D1FF; /* highlight colour helps the label stand out */
+  margin-bottom: 10px;
+}
+
+/* threat card heading */
+.threat-card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+/* threat card text */
+.card-text {
+  font-size: 19px;
+  line-height: 1.5;  /* makes the text easier to read */
+  color: #D1D5DB;
+  margin-bottom: 16px;
+}
+
+/* threat image area */
+.threat-image {
+  width: 100%;
+  height: 145px;  /* keeps the image box the same in every card */
+  margin-top: auto; /* pushes the image to the bottom so all cards stay aligned */
+  border-radius: 2px; 
+  overflow: hidden; /* keeps the image inside the box */
+}
+
+/* threat image */
+.threat-image img {
+  width: 100%;  /* makes the image fill the full image area */
+  height: 100%; /* keeps the image height equal to the image box */
+  object-fit: cover;  /* fills the box neatly without leaving empty space */
+  display: block;  /* removes extra gap under the image */
+}
+
+/*   Solution card   */
+.solution-container {
+  display: flex; /* keeps the solution cards in a flexible layout */
+  flex-direction: column; /* places the solution cards one below another */
+  align-items: center; /* keeps the solution cards centered */
+  gap: 24px; /* adds space between solution cards */
+}
+
+.solution-link {
+  text-decoration: none; /* removes the default underline from the linked solution card */
+  width: 90%;
+  max-width: 1250px; /* stops the card from becoming too wide */
+}
+
+.solution-card {
+  width: 100%;
+  height: 160px; /* keeps all solution cards the same height so the layout looks balanced and consistent */
+  background-color: #193975;
+  border: 2px solid #276AFF;
+  border-radius: 24px;
+  padding: 18px 20px;
+  display: flex; /* keeps the image and text aligned in one row inside the card */
+  align-items: center; /* keeps image and text aligned in the middle */
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.solution-card:hover {
+  transform: translateY(-4px); /* moves the card slightly up on hover */
+  border-color: #00D1FF;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* adds shadow on hover */
+}
+
+.solution-image {
+  width: 210px;
+  height: 110px;
+  overflow: hidden; /* keeps the image inside the box */
+  border-radius: 4px;
+  flex-shrink: 0; /* stops the image box from shrinking */
+}
+
+.solution-image img {
+  width: 100%; /* makes the image fill the full width of the image box */
+  height: 100%; /* makes the image fill the full height of the image box */
+  object-fit: cover; /* keeps the image neat inside the box */
+  display: block; /* removes the small extra gap that images can leave underneath, so the layout looks cleaner */
+}
+
+.solution-content {
+  width: 100%; /* gives the text area full space */
+}
+
+.solution-label {
+  font-size: 15px;
+  font-weight: 700;
+  color: #00D1FF;
+  margin-bottom: 10px;
+  margin-left: 14px;
+}
+
+.solution-card h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+  margin-left: 14px;
+}
+
+.solution-text {
+  font-size: 21px;
+  line-height: 1.5; /* makes the text easier to read */
+  color: #D1D5DB;
+  margin-left: 14px;
+}
+
+

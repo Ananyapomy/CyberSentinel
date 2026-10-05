@@ -1,0 +1,150 @@
+/* main login area */
+.centerContent {
+  width: 100%; /* lets the section fill the page width */
+  margin: 70px auto; 
+  padding: 40px 20px 50px 20px; 
+  display: flex; /* keeps the login box centered on the page */
+  justify-content: center;
+  align-items: flex-start; /* keeps the content aligned from the top */
+  flex: 1; /* lets this section grow and helps push the footer down */
+}
+
+/* whole login card */
+.login-box {
+  width: 90%; /* keeps the card flexible on different screen sizes */
+  max-width: 1120px; /* stops the card from becoming too wide */
+  min-height: 620px; /* keeps the card tall enough to look balanced */
+  background-color: #193975;
+  border: 1px solid #2B3D6B; 
+  display: grid; /* splits the card into two sections */
+  grid-template-columns: 58% 42%; /* gives more space to the form and less to the image side */
+  border-radius: 20px; 
+  overflow: hidden; /* keeps inner content inside the rounded edges */
+}
+
+/* left side */
+.login-left {
+  padding: 56px 50px 48px 50px; 
+  border-right: 1px solid #2B3D6B;
+}
+
+.login-left h2 {
+  font-size: 32px; 
+  font-weight: 700;
+  margin-bottom: 14px; 
+}
+
+.login-subtext {
+  font-size: 18px;
+  color: #D1D5DB;
+  margin-bottom: 28px; 
+  line-height: 1.5; /* makes the text easier to read */
+}
+
+/* form text */
+.login-left form {
+  font-size: 18px; 
+  font-weight: 700;
+  color: #D1D5DB;
+}
+
+/* inputs */
+.login-left input[type="email"],
+.login-left input[type="password"] {
+  width: 100%; /* makes the inputs fill the full width */
+  background-color: #11184E;
+  border: 1px solid #0b1038;
+  border-radius: 12px;
+  color: #FFFFFF;
+  padding: 18px 20px; 
+  font-size: 16px;
+  margin-top: 10px; 
+  margin-bottom: 6px;
+}
+
+/* button */
+.login-box input[type="button"] {
+  width: 100%; /* makes the button fill the full width */
+  background-color: #00D1FF;
+  color: #000000;
+  border: none;
+  border-radius: 8px;
+  padding: 16px; /* adds space inside the button */
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer; /* shows that the button is clickable */
+  margin-top: 30px;
+  transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* makes the hover effect smoother */
+}
+
+/* button hover */
+.login-box input[type="button"]:hover {
+  color: #FFFFFF; 
+  transform: translateY(-2px); /* moves the button slightly up on hover */
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2); /* adds shadow so the button stands out more */
+}
+
+/* bottom links */
+.login-links {
+  display: flex; /* places the links in one row */
+  justify-content: space-between; /* pushes the links apart */
+  margin-top: 16px; 
+  gap: 16px; 
+}
+
+.login-links a {
+  text-decoration: none; /* removes the default underline */
+  color: #00D1FF; 
+  font-size: 16px; 
+  font-weight: 600;
+  transition: color 0.3s ease; /* makes the hover colour change smoother */
+}
+
+.login-links a:hover {
+  color: #FFFFFF; 
+  text-decoration: underline; /* shows clearly that the link is interactive */
+}
+
+/* right side */
+.login-right {
+  display: grid; /* divides the right side into two areas */
+  grid-template-rows: 58% 42%; /* gives more space to the image and less to the text */
+}
+
+/* image area */
+.login-image {
+  display: flex; /* helps place the image neatly */
+  justify-content: center;
+  align-items: center; /* keeps the image centered */
+  padding: 32px 28px 24px 28px; /* adds space around the image */
+  border-bottom: 1px solid #2B3D6B; /* separates the image area from the text area below */
+}
+
+/* image */
+.login-image img {
+  width: 100%; /* makes the image fill the container width */
+  max-height: 260px; /* stops the image from becoming too tall */
+  object-fit: cover; /* keeps the image neat inside the box */
+  display: block; /* removes extra gap under the image */
+  border-radius: 12px; 
+}
+
+/* bottom text area */
+.login-info-box {
+  text-align: center; /* keeps the text centered */
+  padding: 30px 24px 24px 24px; 
+}
+
+/* small heading */
+.login-info-box h3 {
+  font-size: 24px; 
+  font-weight: 700;
+  margin-bottom: 16px; 
+}
+
+/* info text */
+.login-info-box p {
+  font-size: 18px; 
+  color: #D1D5DB;
+  line-height: 1.6; /* makes the text easier to read */
+}

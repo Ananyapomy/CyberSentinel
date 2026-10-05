@@ -1,0 +1,233 @@
+/* main page area */
+.ai-solution-page {
+  width: 100%; /* makes the page fill the full width */
+  padding-bottom: 40px; 
+}
+
+/* page title area */
+.page-heading {
+  text-align: center; /* keeps the heading in the middle */
+  margin-top: 35px;
+  margin-bottom: 55px; 
+}
+
+/* main page heading */
+.page-heading h1 {
+  font-size: 42px; 
+  font-weight: 700;
+  margin-bottom: 15px; 
+}
+
+/* supporting text */
+.page-heading p {
+  font-size: 22px; 
+  color: #D1D5DB; 
+}
+
+/* simulator card */
+.simulator-card {
+  width: 90%; /* keeps the box flexible on different screen sizes */
+  max-width: 900px; /* stops the box from becoming too wide */
+  margin: 0 auto; /* centers the simulator box */
+  background-color: #193975;
+  padding: 30px; 
+  border-radius: 12px; 
+}
+
+/* intro text */
+.intro {
+  font-size: 24px; 
+  font-weight: 700;
+  line-height: 1.7; /* makes the text easier to read */
+  color: #00D1FF; 
+  margin-bottom: 20px; 
+}
+
+/* textarea */
+.simulator-input {
+  width: 100%; /* makes the textarea fill the box */
+  min-height: 180px; /* gives enough space for longer messages */
+  background-color: #11184E;
+  color: #D1D5DB;
+  border: none;
+  border-radius: 20px;
+  padding: 22px; 
+  font-size: 20px;
+  line-height: 1.6; /* makes typed text easier to read */
+  resize: none; /* stops the user from resizing the box */
+  margin-bottom: 20px; /* adds space below the textarea */
+  outline: none; /* removes the default browser outline */
+}
+
+.simulator-input:focus {
+  box-shadow: inset 0 0 0 1px #00D1FF, 0 0 14px rgba(0, 209, 255, 0.18); /* highlights the textarea when clicked */
+}
+
+/* run analysis button */
+.run-btn {
+  width: 100%; /* makes the button fill the full width */
+  background-color: #00D1FF;
+  color: #000000;
+  border: none;
+  padding: 16px; /* adds space inside the button */
+  font-size: 22px;
+  font-weight: bold; /* makes the button text stand out */
+  border-radius: 10px;
+  cursor: pointer; /* shows that the button is clickable */
+  transition: color 0.3s ease, transform 0.3s ease; /* makes the hover effect smooth */
+}
+
+.run-btn:hover {
+  color: #FFFFFF; 
+  transform: translateY(-2px); /* moves the button slightly up on hover */
+}
+
+/* support section */
+.support-section {
+  width: 90%; /* keeps the section flexible */
+  max-width: 1200px; /* stops the section from becoming too wide */
+  margin: 70px auto 90px;
+  text-align: center; /* keeps the heading centered */
+}
+
+/* support section heading */
+.support-section h2 {
+  font-size: 30px; 
+  color: #00D1FF; 
+  margin-bottom: 55px; 
+}
+
+/* card row */
+.cards {
+  display: flex; /* places the cards in one row */
+  justify-content: center;
+  gap: 45px; 
+  flex-wrap: wrap; /* lets cards move down if needed */
+}
+
+/* support card */
+.card {
+  width: 320px; /* keeps the cards the same width */
+  background-color: #193975;
+  padding: 20px;
+  border-radius: 26px; 
+  text-align: left; /* keeps the text aligned to the left */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* makes the hover effect smooth */
+}
+
+.card:hover {
+  transform: translateY(-4px); /* moves the card slightly up on hover */
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22); /* adds shadow on hover */
+}
+
+/* support card heading */
+.card h3 {
+  font-size: 24px; 
+  color: #00D1FF; 
+  margin-bottom: 15px;
+}
+
+/* support card text */
+.card p {
+  font-size: 20px;
+  line-height: 1.6; /* makes the text easier to read */
+  color: #D1D5DB;
+}
+
+/* strategy heading section */
+.strategy-heading {
+  text-align: center; /* keeps the heading in the middle */
+  margin: 70px 0 40px; /* adds space above and below */
+}
+
+/* strategy heading */
+.strategy-heading h2 {
+  font-size: 34px; 
+}
+
+/* strategy card */
+.strategy-card {
+  width: 90%; /* keeps the box flexible */
+  max-width: 1000px; /* stops the box from becoming too wide */
+  margin: 0 auto 35px; /* centers the card and adds space below it */
+  background-color: #193975;
+  padding: 55px 30px 85px 30px; 
+}
+
+/* strategy card heading */
+.strategy-card h3 {
+  text-align: center; /* keeps the heading centered */
+  font-size: 33px; 
+  font-weight: 600;
+  margin-bottom: 20px; 
+}
+
+/* strategy intro text */
+.strategy-intro {
+  font-size: 24px; 
+  line-height: 1.5; /* makes the intro easier to read */
+  margin-bottom: 30px; /* adds space below the intro */
+  color: #D1D5DB;
+}
+
+/* tip card */
+.tip-card {
+  background-color: #11184E;
+  padding: 35px 20px 35px 20px; 
+  border-radius: 16px;
+  margin-bottom: 30px; 
+}
+
+/* tip card heading */
+.tip-card h4 {
+  font-size: 22px; 
+  margin-bottom: 15px; 
+}
+
+/* tip card text */
+.tip-card p {
+  font-size: 20px; 
+  line-height: 1.5; /* makes the tip text easier to read */
+  color: #D1D5DB;
+}
+
+/* why this matters heading */
+.strategy-card h5 {
+  color: #00D1FF; /* highlights the heading */
+  font-size: 26px;
+  margin-top: 40px; 
+  margin-bottom: 10px; 
+}
+
+/* why this matters text */
+.why-text {
+  font-size: 24px;
+  line-height: 1.5; /* makes the text easier to read */
+  color: #D1D5DB;
+}
+
+/* final summary card */
+.final-card {
+  width: 90%; /* keeps the box flexible */
+  max-width: 1000px; /* stops the box from becoming too wide */
+  margin: 30px auto 60px; /* centers the box and adds space around it */
+  background-color: #193975;
+  padding: 30px 50px; 
+  border-radius: 30px;
+  text-align: center; /* keeps the final content centered */
+}
+
+/* final card heading */
+.final-card h3 {
+  font-size: 26px;
+  margin-bottom: 15px; 
+}
+
+/* final card text */
+.final-card p {
+  max-width: 1100px; /* stops the text from becoming too wide */
+  margin: 0 auto; /* centers the text */
+  font-size: 22px; 
+  line-height: 1.5; /* makes the text easier to read */
+  color: #D1D5DB;
+}

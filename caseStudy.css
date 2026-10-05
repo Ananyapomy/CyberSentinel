@@ -1,0 +1,199 @@
+/* main page area */
+.case-page {
+  width: 100%; /* makes the page fill the full width */
+}
+
+/* banner section */
+.banner {
+  width: 100%; /* makes the banner fill the page width */
+  background-color: #11184E;
+  text-align: center; /* keeps the banner text in the middle */
+  padding: 90px 70px 140px; 
+}
+
+.banner h1 {
+  font-size: 48px; 
+  font-weight: 700;
+  margin-bottom: 18px; /* adds space below the heading */
+}
+
+.banner p {
+  font-size: 24px; 
+  font-weight: 400;
+  color: #D1D5DB; 
+  line-height: 1.6; /* makes the text easier to read */
+  max-width: 900px; /* stops the text from becoming too wide */
+  margin: 0 auto; /* centers the paragraph */
+}
+
+/* statistics section */
+.stats {
+  width: 100%; /* makes the stats section fill the full width */
+  background-color: #193975;
+  border: 2px solid #000000;
+  padding: 70px 20px 120px; 
+}
+
+/* statistics heading */
+.stats-title {
+  font-size: 36px; 
+  font-weight: 700;
+  width: 82%; /* keeps the heading aligned with the content below */
+  max-width: 1300px; /* stops the heading area from becoming too wide */
+  margin: 0 auto 12px; /* centers the heading and adds space below */
+  padding-left: 30px; 
+}
+
+/* statistics supporting text */
+.stats-text {
+  font-size: 22px; 
+  margin-bottom: 40px;
+  color: #D1D5DB;
+  width: 82%; /* keeps the text aligned with the heading and cards */
+  max-width: 1300px; /* stops the text area from becoming too wide */
+  margin: 0 auto 50px; /* centers the text and adds space below */
+  padding-left: 30px;
+}
+
+/* statistics cards row */
+.cards {
+  display: flex; /* places the cards in one row */
+  justify-content: center;
+  gap: 80px; 
+  flex-wrap: wrap; /* lets cards move down if needed */
+}
+
+/* statistics card */
+.card {
+  width: 370px; /* keeps all cards the same width */
+  background-color: #11184E;
+  border-radius: 24px;
+  padding: 70px 30px; 
+}
+
+/* statistics number */
+.card h2 {
+  color: #00D1FF; 
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 18px; 
+  text-align: center; 
+}
+
+/* statistics card text */
+.card p {
+  font-size: 15px; 
+  font-weight: 500;
+  line-height: 1.5; /* makes the text easier to read */
+  text-align: center; /* keeps the text centered */
+}
+
+/* stats cards hover effect */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* makes the hover effect smooth */
+}
+
+.card:hover {
+  transform: translateY(-6px); /* moves the card slightly up on hover */
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22); /* adds shadow so the card stands out more */
+}
+
+/* case studies section */
+.case-studies {
+  width: 100%; /* makes the section fill the page width */
+  background-color: #11184E;
+  padding: 35px 0 50px; 
+}
+
+/* case studies title */
+.case-title {
+  font-size: 36px; 
+  font-weight: 700;
+  width: 78%; /* keeps the title aligned with the content below */
+  margin: 18px auto 18px; 
+}
+
+/* case studies text */
+.case-text {
+  font-size: 20px; 
+  color: #D1D5DB;
+  width: 78%; /* keeps the text aligned with the title and cards */
+  margin: 0 auto 55px;
+}
+
+/* each case study card */
+.case-card {
+  width: 74%; /* keeps the case study card narrower and more balanced */
+  background-color: #193975;
+  margin: 0 auto 28px; 
+  padding: 28px 26px; 
+}
+
+/* top label */
+.tag {
+  display: inline-block; /* keeps the label only as wide as its content */
+  background-color: #11184E;
+  color: #00D1FF;
+  text-decoration: none;
+  border: 2px solid #00D1FF; /* adds a border so the label stands out */
+  border-radius: 8px;
+  padding: 7px 12px; 
+  font-size: 15px; 
+  font-weight: 700;
+  margin-bottom: 18px; /* adds space below the label */
+}
+
+.tag:hover {
+  color: #FFFFFF; /* changes text colour on hover */
+  border-color: #FFFFFF; /* changes border colour on hover */
+}
+
+/* main case title */
+.case-card h3 {
+  font-size: 24px; 
+  font-weight: 700;
+  margin-bottom: 22px; 
+}
+
+/* small section headings */
+.case-card h4 {
+  font-size: 22px; 
+  font-weight: 700;
+  margin-top: 18px; 
+  margin-bottom: 12px; 
+}
+
+/* paragraphs inside case cards */
+.case-card p {
+  font-size: 20px; 
+  line-height: 1.85; /* makes long text easier to read */
+  color: #D1D5DB;
+  margin-bottom: 22px; 
+  max-width: 1250px; /* stops the text from becoming too wide */
+}
+
+/* impact and lesson box */
+.impact-card {
+  background-color: #11184E;
+  border: 1px solid #00D1FF;
+  border-radius: 15px;
+  padding: 24px 22px; 
+  margin-top: 18px; 
+}
+
+/* impact box heading */
+.impact-card h4 {
+  color: #00D1FF;
+  font-size: 22px; 
+  font-weight: 700;
+  margin-top: 0;
+  margin: 0 0 10px 0; /* removes extra top space and adds space below */
+}
+
+/* impact box text */
+.impact-card p {
+  font-size: 20px; 
+  line-height: 1.85; /* makes the text easier to read */
+  color: #D1D5DB;
+  margin: 0 0 20px 0; 
+}

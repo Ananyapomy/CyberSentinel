@@ -1,0 +1,343 @@
+/* threat page */
+/* main page area */
+.threat-page {
+  padding: 50px 40px 70px; /* adds space around the page content */
+}
+
+/* top intro */
+.intro {
+  text-align: center; /* keeps the heading and text in the middle */
+  max-width: 1050px; /* stops the intro text from becoming too wide */
+  margin: 0 auto 70px; /* centers the intro and adds space below it */
+}
+
+/* small label */
+.label {
+  display: inline-block; /* keeps the label only as wide as its text */
+  padding: 12px 22px; 
+  border: 1px solid #00D1FF;
+  border-radius: 6px;
+  color: #00D1FF; 
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 25px; 
+}
+
+/* main heading */
+.intro h1 {
+  font-size: 46px; 
+  color: #FFFFFF;
+  margin-bottom: 24px; 
+}
+
+/* intro text */
+.intro p {
+  font-size: 26px; 
+  line-height: 1.7; /* makes the text easier to read */
+  color: #D1D5DB;
+}
+
+/* cards section */
+.cards {
+  display: flex; /* places the cards in one row */
+  justify-content: center; /* keeps the cards centered */
+  gap: 30px; 
+  flex-wrap: wrap; /* lets cards move down if needed */
+  margin-bottom: 70px; 
+}
+
+/* each card */
+.card {
+  background-color: #193975;
+  border: 2px solid #00D1FF;
+  border-radius: 30px;
+  width: 360px; /* keeps all cards the same width */
+  min-height: 720px; /* keeps the cards tall enough and balanced */
+  padding: 28px 22px; 
+  display: flex; /* makes it easier to arrange the card content */
+  flex-direction: column; /* stacks the content from top to bottom */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* makes the hover effect smooth */
+}
+
+/* card hover */
+.card:hover {
+  transform: translateY(-6px); /* moves the card slightly up on hover */
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25); /* adds shadow so the card stands out more */
+  border-color: #FFFFFF; 
+}
+
+/* card title */
+.card h2 {
+  font-size: 28px; 
+  color: #FFFFFF;
+  margin-bottom: 24px; 
+}
+
+/* small headings in the card */
+.card h3 {
+  font-size: 21px; 
+  color: #00D1FF; 
+  margin-top: 16px; 
+  margin-bottom: 10px; 
+}
+
+/* keeps the first paragraph area equal so the next heading lines up */
+.card h3 + p {
+  min-height: 150px; /* keeps the cards more balanced */
+}
+
+/* normal text inside card */
+.card p {
+  font-size: 18px; 
+  line-height: 1.7; /* makes the text easier to read */
+  color: #D1D5DB;
+  margin-bottom: 16px; 
+}
+
+/* bullet points */
+.card ul {
+  padding-left: 20px; 
+  margin-bottom: 18px; 
+}
+
+/* each bullet line */
+.card ul li {
+  font-size: 18px; 
+  line-height: 1.7; /* makes the bullet text easier to read */
+  color: #D1D5DB;
+  margin-bottom: 10px; 
+}
+
+/* impact box */
+.impact-box {
+  background-color: #11184E;
+  border: 2px solid #00D1FF;
+  border-radius: 15px;
+  padding: 20px; 
+  min-height: 240px; /* keeps the impact box a balanced height */
+  margin-top: auto; /* pushes the box lower so the cards line up better */
+  margin-bottom: 20px; 
+}
+
+/* impact heading */
+.impact-box h4 {
+  font-size: 21px; 
+  color: #00D1FF; 
+  margin-bottom: 14px; 
+}
+
+/* link at the bottom of card */
+.card-link {
+  color: #00D1FF; 
+  text-decoration: none; /* removes the default underline */
+  font-size: 21px; 
+  font-weight: 700;
+  transition: color 0.3s ease; /* makes the hover colour change smoother */
+}
+
+/* link hover */
+.card-link:hover {
+  color: #FFFFFF; 
+}
+
+/* email example section */
+.email-section {
+  max-width: 1100px; /* stops the section from becoming too wide */
+  margin: 0 auto 55px; /* centers the section and adds space below it */
+}
+
+/* email heading */
+.email-section h2 {
+  text-align: center;
+  font-size: 30px; 
+  color: #FFFFFF;
+  margin-bottom: 28px; 
+}
+
+/* full email box */
+.email-box {
+  border: 2px solid #000000;
+  border-radius: 12px;
+  overflow: hidden; /* keeps the inner parts neatly inside the box */
+}
+
+/* top part of email */
+.email-top {
+  background-color: #193975;
+  padding: 22px; 
+}
+
+/* text in the top email area */
+.email-top p {
+  font-size: 18px; 
+  color: #D1D5DB;
+  margin-bottom: 8px; 
+}
+
+/* from, to, subject words */
+.email-top span {
+  color: #00D1FF;
+  font-weight: 700; /* makes the labels bolder */
+}
+
+/* bottom email part */
+.email-body {
+  background-color: #11184E;
+  padding: 22px; 
+}
+
+/* email message text */
+.email-body p {
+  font-size: 18px; 
+  line-height: 1.8; /* makes the email text easier to read */
+  color: #D1D5DB;
+  margin-bottom: 16px; 
+}
+
+/* warning section */
+.warning-section {
+  max-width: 1100px; /* stops the section from becoming too wide */
+  margin: 0 auto; /* centers the warning section */
+  margin-bottom: 60px;
+}
+
+/* warning box */
+.warning-box {
+  background-color: #193975;
+  border: 2px solid #FF4D4D;
+  border-radius: 12px;
+  padding: 26px; 
+}
+
+/* warning heading */
+.warning-box h3 {
+  font-size: 23px; 
+  color: #FF4D4D; /* uses red to show warning */
+  margin-bottom: 18px;
+}
+
+/* warning list */
+.warning-box ul {
+  padding-left: 18px; 
+}
+
+/* warning points */
+.warning-box li {
+  font-size: 18px; 
+  line-height: 1.8; /* makes the warning text easier to read */
+  color: #D1D5DB;
+  margin-bottom: 12px; /* adds space below each point */
+}
+
+/* email and warning boxes */
+.email-box,
+.warning-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* makes the hover effect smooth */
+}
+
+/* pop effect on hover */
+.email-box:hover,
+.warning-box:hover {
+  transform: translateY(-4px); /* moves the box slightly up on hover */
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22); /* adds shadow so the box stands out more */
+}
+
+/* these two section boxes use the same styling so the warning list and table look consistent on the page */
+.warning-list-section,
+.threat-table-box {
+  max-width: 1100px; /* keeps the content from becoming too wide, which makes it easier to read on large screens */
+  margin: 0 auto 70px auto; /* centres the section and adds space below so each part does not look cramped */
+  padding: 35px 40px;
+  background-color: #193975;
+  border: 2px solid #00D1FF;
+  border-radius: 18px;
+}
+
+.warning-list-section h2,
+.threat-table-box h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+
+.warning-list-section p,
+.threat-table-box p {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #D1D5DB;
+  margin-bottom: 30px;
+}
+
+/* styles the main warning list so the content is clear and well spaced */
+.warning-list {
+  margin-left: 25px;
+  font-size: 20px;
+  line-height: 1.8;
+  color: #FFFFFF;
+}
+
+/* styles only the main list items so the main threat names stand out, while the nested points stay smaller and less dominant */
+.warning-list > li {
+  margin-bottom: 22px;
+  font-weight: 700;
+}
+
+/* styles the bullet point itself, not the text, so the main list markers match the website accent colour */
+.warning-list > li::marker {
+  color: #00D1FF; /* helps the bullets stand out and match the site's visual theme */
+}
+
+/* styles the nested list under each main threat type */
+.warning-list ul {
+  margin-top: 10px;
+  margin-left: 28px;
+}
+
+/* styles the smaller list items so they look less dominant than the main headings */
+.warning-list ul li {
+  color: #D1D5DB;
+  font-weight: 400;
+  margin-bottom: 10px;
+  list-style-type: circle; /* uses circle bullets to visually separate the nested list from the main list */
+}
+
+/* wraps the table so it can scroll sideways on smaller screens instead of breaking the layout */
+.table-wrap {
+  width: 100%; /* allows the wrapper to use the full width of its parent section */
+  overflow-x: auto; /* helps the table stay usable on smaller screens and different browsers */
+}
+
+/* styles the main table area */
+.threat-table {
+  width: 100%;
+  border-collapse: collapse; /* joins the borders together so the table looks cleaner and more professional */
+  background-color: #11184E;
+}
+
+/* styles both the heading cells and normal cells for a consistent table layout */
+.threat-table th,
+.threat-table td {
+  border: 1px solid #00D1FF;
+  padding: 14px;
+  text-align: left;
+  vertical-align: top; /* keeps text aligned from the top when some cells contain more text than others */
+  font-size: 18px;
+  line-height: 1.6; /* improves readability inside the table cells */
+}
+
+/* styles the table heading row so the column titles stand out from the data rows */
+.threat-table th {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+/* styles the normal table data cells */
+.threat-table td {
+  color: #FFFFFF;
+}
+
+/* adds a hover effect so the table feels more interactive and visually engaging */
+.threat-table tr:hover td {
+  background-color: #276AFF;
+  color: #FFFFFF;
+}
